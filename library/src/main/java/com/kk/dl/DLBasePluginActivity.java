@@ -25,6 +25,7 @@ import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -47,7 +48,7 @@ import com.kk.dl.utils.DLConstants;
  *
  * @author renyugang
  */
-public class DLBasePluginActivity extends Activity implements DLPlugin {
+public class DLBasePluginActivity extends AppCompatActivity implements DLPlugin {
 
     private static final String TAG = "DLBasePluginActivity";
 

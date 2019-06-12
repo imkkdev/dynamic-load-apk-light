@@ -18,13 +18,13 @@
 
 package com.kk.dl;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.content.res.Resources.Theme;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,7 +35,7 @@ import com.kk.dl.internal.DLAttachable;
 import com.kk.dl.internal.DLPluginManager;
 import com.kk.dl.internal.DLProxyImpl;
 
-public class DLProxyActivity extends Activity implements DLAttachable {
+public class DLProxyActivity extends AppCompatActivity implements DLAttachable {
 
     protected DLPlugin mRemoteActivity;
     private DLProxyImpl impl = new DLProxyImpl(this);
